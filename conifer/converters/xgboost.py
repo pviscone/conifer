@@ -42,7 +42,7 @@ def convert(bdt : Union[xgb.core.Booster, xgb.XGBClassifier, xgb.XGBRegressor]):
                     'init_predict' : [0] * fn_classes,
                     'norm' : 1,
                     'library':'xgboost',
-                    'splitting_convention': splitting_conventions['xgboost']},        
+                    'splitting_convention': splitting_conventions['xgboost'],        
                     'feature_map' : feature_names
                     }
 
