@@ -75,7 +75,7 @@ public:
     return value_[i];
   }
 
-  void init_(std::string splitting_convention){
+  void init_(std::string split_convention){
     /* Since T, U types may not be readable from the JSON, read them to double and the cast them here */
     splitting_convention = split_convention;
     std::transform(threshold.begin(), threshold.end(), std::back_inserter(threshold_),
